@@ -15,6 +15,11 @@ const marvelReducer = (state = INITIAL_STATE, action) => {
         ...state,
         errors: action.payload,
       };
+    case 'MORE_CHARACTERS':
+      return {
+        ...state,
+        characters: action.payload,
+      };
     default:
       return state;
   }
