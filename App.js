@@ -7,6 +7,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 
 import InitScreen from './src/screens/InitScreen';
 import HomeScreen from './src/screens/HomeScreen';
+import HomeInfoScreen from './src/screens/HomeInfoScreen';
 
 import store from './src/store';
 
@@ -25,6 +26,11 @@ const NavigationContainerAndMore = () => {
         <Stack.Screen
           name="Home"
           component={HomeScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="HomeInfo"
+          component={HomeInfoScreen}
           options={{headerShown: false}}
         />
       </Stack.Navigator>
