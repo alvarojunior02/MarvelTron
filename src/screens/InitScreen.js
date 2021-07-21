@@ -23,33 +23,33 @@ const InitScreen = ({navigation}) => {
 const Screen = styled.View`
     justify-content: center;
     align-items: center;
-    background-color: #ec1d24;
+    background-color: #efefef;
     height: 100%;
 `;
 
 const Title = styled.Text`
     font-size: 30px;
-    color: white;
+    color: black;
 `;
 
 const Subtitle = styled.Text`
     font-size: 20px;
-    color: white;
+    color: black;
 `;
 
 const Init = styled.TouchableOpacity`
-    background-color: white;
-    width: 100px;
-    height: 30px;
-    margin-top: 20px;
+    background-color: #ec1d24;
+    width: 140;
+    height: 50;
+    margin-top: 20;
     justify-content: center;
     align-items: center;
-    border-radius: 30px;
+    border-radius: 30;
 `;
 
 const InitText = styled.Text`
     font-size: 20;
-    color: #ec1d24;
+    color: white;
 `;
 
 export default InitScreen;

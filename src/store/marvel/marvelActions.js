@@ -23,11 +23,11 @@ export const getCharacters = (callback = () => {}) => async (
 };
 
 export const moreCharacters = (
-    characters,
+    count,
     callback = () => {},
 ) => async (dispatch) => {
     try{
-        const offset = characters.length;
+        const offset = count*20;
         api.get('/characters', {
                 params: {
                     offset,
@@ -37,7 +37,7 @@ export const moreCharacters = (
         .then(response => {
             dispatch({
                 type: 'MORE_CHARACTERS',
-                payload: [...characters, ...response.data.data.results],
+                payload: response.data.data.results,
             });
             callback();
         })

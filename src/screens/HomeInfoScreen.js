@@ -24,11 +24,6 @@ const HomeInfoScreen = ({route}) => {
                             Voltar
                         </ButtonText>
                     </Button>
-                    <Button>
-                        <ButtonText>
-                            Editar
-                        </ButtonText>
-                    </Button>
                 </Div>
             </Character>
         </Screen>
@@ -36,7 +31,7 @@ const HomeInfoScreen = ({route}) => {
 };
 
 const Screen = styled.ScrollView`
-    background-color: #ec1d24;
+    background-color: #efefef;
 `;
 
 const Character = styled.View`
@@ -45,19 +40,19 @@ const Character = styled.View`
 `;
 
 const ImageCharacter = styled.Image`
-    width: 400;
-    height: 400;
+    width: 380;
+    height: 380;
 `;
 
 const Name = styled.Text`
     font-size: 30;
-    color: white;
+    color: black;
     text-align: center;
 `;
 
 const Description = styled.Text`
     font-size: 20;
-    color: white;
+    color: black;
     text-align: justify;
     margin: 5% 5% 5% 5%;
 `;
@@ -76,14 +71,14 @@ const Button = styled.TouchableOpacity`
     margin-top: 5px;
     margin-bottom: 25px;
     margin-left: 3%;
+    justify-content: center;
+    align-items: center;
 `;
 
 const ButtonText = styled.Text`
     font-size: 20;
     color: black;
     text-align: center;
-    justify-content: center;
-    align-items: center;
 `;
 
 export default HomeInfoScreen;
